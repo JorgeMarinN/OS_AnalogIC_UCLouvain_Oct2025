@@ -1,4 +1,4 @@
-** sch_path: /home/designer/shared/OS_AnalogIC_VLSISOC_Oct2025/design_data/tb_tgate_RON.sch
+** sch_path: /home/designer/shared/OS_AnalogIC_UCLouvain_Oct2025/design_data/tb_tgate_RON.sch
 **.subckt tb_tgate_RON V_in
 *.iopin V_in
 x1 net1 vdd GND V_in vdd GND transmission_gate
@@ -39,8 +39,8 @@ plot ron
 **.ends
 
 * expanding   symbol:  transmission_gate.sym # of pins=6
-** sym_path: /home/designer/shared/OS_AnalogIC_VLSISOC_Oct2025/design_data/transmission_gate.sym
-** sch_path: /home/designer/shared/OS_AnalogIC_VLSISOC_Oct2025/design_data/transmission_gate.sch
+** sym_path: /home/designer/shared/OS_AnalogIC_UCLouvain_Oct2025/design_data/transmission_gate.sym
+** sch_path: /home/designer/shared/OS_AnalogIC_UCLouvain_Oct2025/design_data/transmission_gate.sch
 .subckt transmission_gate B GN GP A BP BN
 *.iopin B
 *.iopin GN
@@ -48,8 +48,8 @@ plot ron
 *.iopin GP
 *.iopin BN
 *.iopin BP
-XM1 A GN B BN sg13_lv_nmos w=30u l=0.13u ng=3 m=1
-XM2 A GP B BP sg13_lv_pmos w=60u l=0.13u ng=6 m=1
+XM1 A GN B BN sg13_lv_nmos w=10u l=0.13u ng=1 m=1
+XM2 A GP B BP sg13_lv_pmos w=20u l=0.13u ng=2 m=1
 .ends
 
 .GLOBAL GND

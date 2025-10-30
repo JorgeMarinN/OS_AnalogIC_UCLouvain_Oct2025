@@ -1,8 +1,8 @@
-** sch_path: /home/designer/shared/OS_AnalogIC_VLSISOC_Oct2025/design_data/tb_3stage_RO.sch
+** sch_path: /home/designer/shared/OS_AnalogIC_UCLouvain_Oct2025/design_data/tb_3stage_RO.sch
 **.subckt tb_3stage_RO
-x1 V_1 VCC VSS V_2 sg13g2_inv_2
-x2 V_2 VCC VSS V_3 sg13g2_inv_2
-x3 V_3 VCC VSS V_1 sg13g2_inv_2
+x1 V_2 V_1 VCC VSS sg13g2_inv_2
+x2 V_3 V_2 VCC VSS sg13g2_inv_2
+x3 V_1 V_3 VCC VSS sg13g2_inv_2
 **** begin user architecture code
 
 .include /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
